@@ -1,0 +1,77 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.chat-container {
+    width: 100%;
+    height: 100%;
+    margin: 50px auto;
+    border: 1px solid #2e1f1f;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    color: rgb(220, 209, 209);
+}
+
+#chat-box {
+    height: 200px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: rgb(49, 38, 38);
+    color: rgb(218, 206, 206);
+}
+
+#user-input {
+    width: calc(100% - 85px); /* Adjusted width to accommodate button */
+    padding: 10px;
+    box-sizing: border-box;
+    margin-right: 5px; /* Added margin to separate input and button */
+}
+
+#submit-btn {
+    width: 80px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #45a049;
+}
+
+
+/* Media queries for responsiveness */
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+    .chat-container {
+        margin: 20px auto;
+        padding: 10px;
+    }
+}
+
+/* For tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .chat-container {
+        margin: 30px auto;
+        padding: 15px;
+    }
+}
+
+/* For laptops and desktops */
+@media only screen and (min-width: 1024px) {
+    .chat-container {
+        margin: 50px auto;
+        padding: 20px;
+    }
+}
+
